@@ -1,0 +1,21 @@
+@import "../../../../../shared/colors";
+
+.container {
+  border: 1px solid $base;
+
+  margin: 16px 0;
+  padding-left: 24px;
+}
+
+.box {
+  margin-right: -16px;
+  padding: 24px 24px 24px 0;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.description {
+  color: $grey;
+}

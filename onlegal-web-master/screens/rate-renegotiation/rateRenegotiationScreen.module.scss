@@ -1,0 +1,223 @@
+@import "../../shared/colors";
+
+.hero {
+  background-color: $lightGrey;
+  display: flex;
+  padding: 3rem 10%;
+
+  .detail {
+    flex: 1;
+
+    .title {
+      font-family: "Manrope", sans-serif;
+    }
+
+    .description {
+      margin: 1rem 0;
+    }
+
+    .price {
+      margin: 1rem 0;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .button {
+      border-radius: 0;
+
+      svg {
+        padding-left: 0.5rem;
+      }
+    }
+  }
+
+  .illustration {
+    flex: 1;
+    padding-left: 2rem;
+  }
+
+  @media screen and (max-width: 959px) {
+    flex-direction: column-reverse;
+
+    .illustration {
+      margin-bottom: 1rem;
+      text-align: center;
+      padding-left: 0;
+      svg {
+        max-height: 125px;
+      }
+    }
+  }
+}
+
+.mainContent {
+  padding: 3rem 10%;
+
+  .header {
+    align-items: center;
+    border-bottom: 1px solid $base;
+    display: flex;
+    padding-bottom: 1rem;
+
+    .title {
+      border-right: 1px solid $base;
+      flex-grow: 1;
+      font-family: "Manrope", sans-serif;
+      padding-right: 1rem;
+    }
+
+    .steps {
+      display: flex;
+      flex-grow: 3;
+      justify-content: space-evenly;
+
+      .step {
+        font-family: "Manrope", sans-serif;
+        padding: 0 1rem;
+
+        &:last-child {
+          padding-right: 0;
+        }
+
+        .text {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1150px) {
+    .header {
+      display: block;
+      .title {
+        border-right: none;
+      }
+
+      .steps {
+        display: block;
+        .step {
+          display: block;
+          padding: 1rem 0 0 0;
+        }
+      }
+    }
+  }
+
+  .content {
+    margin-top: 1rem;
+
+    .breadcrumbs {
+      margin: 2.5rem 0 1.5rem 0;
+    }
+
+    @media screen and (max-width: 959px) {
+      .breadcrumbs {
+        display: none;
+      }
+    }
+
+    .information {
+      display: flex;
+
+      .left {
+        box-sizing: border-box;
+        padding-right: 3rem;
+        width: 60%;
+
+        .title {
+          font-family: "Manrope", sans-serif;
+          margin-bottom: 1rem;
+        }
+
+        .description {
+          margin: 1rem 0;
+        }
+
+        .faqs {
+          margin-top: 3rem;
+
+          .accordion {
+            box-shadow: none;
+            margin-bottom: 2rem;
+
+            &::before {
+              display: none;
+            }
+
+            .accordionSummary {
+              border-bottom: 1px solid $base;
+              padding: 0;
+            }
+
+            .accordionDetails {
+              color: $grey;
+              display: block;
+              padding: 1rem 0;
+            }
+
+            .accordionItems {
+              list-style: disc;
+              margin: 0.5rem 0 0 1rem;
+            }
+          }
+        }
+      }
+
+      .documentation {
+        box-sizing: border-box;
+        padding-left: 3rem;
+
+        .title {
+          font-family: "Manrope", sans-serif;
+          margin-bottom: 1rem;
+        }
+        .group {
+          margin-bottom: 2rem;
+
+          .groupTitle {
+            font-family: "Manrope", sans-serif;
+            font-weight: bold;
+            margin-bottom: 1rem;
+          }
+
+          svg {
+            margin-right: 0.5rem;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      @media screen and (max-width: 959px) {
+        flex-direction: column-reverse;
+
+        .left {
+          padding-right: 0;
+          margin-top: 1rem;
+          width: 100%;
+        }
+
+        .documentation {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.cta {
+  background-color: $lightGrey;
+  padding: 3rem 1rem;
+  text-align: center;
+
+  .title {
+    font-family: "Manrope", sans-serif;
+    margin: auto;
+    max-width: 600px;
+    padding-bottom: 2rem;
+  }
+
+  .button {
+    border-radius: 0;
+  }
+}

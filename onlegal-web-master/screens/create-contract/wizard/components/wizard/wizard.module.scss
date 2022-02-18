@@ -1,0 +1,63 @@
+@import "../../../../../shared/colors";
+
+.container {
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  width: 100%;
+
+  @media screen and (max-width: 959px) {
+    height: calc(100% - 48px);
+  }
+}
+.title {
+  color: $grey;
+  padding: 32px 16px 36px 40px;
+
+  .text {
+    vertical-align: middle;
+  }
+
+  .progressText {
+    display: none;
+  }
+
+  @media screen and (max-width: 959px) {
+    & {
+      font-size: 1rem !important;
+      padding: 16px;
+    }
+    .progressText {
+      display: block;
+      float: right;
+    }
+  }
+}
+
+.formContainer {
+  height: calc(100% - 230px);
+  overflow: auto;
+  padding: 28px 15%;
+
+  .formTitle {
+    color: $blue;
+  }
+}
+
+.navigation {
+  background: white;
+  bottom: 0;
+  box-sizing: border-box;
+  left: 0;
+  padding: 16px;
+  position: absolute;
+  width: 100%;
+
+  @media screen and (max-width: 959px) {
+    box-shadow: 0px -2px 7px rgba(0, 0, 0, 0.1);
+  }
+
+  .continueButton {
+    float: right;
+  }
+}

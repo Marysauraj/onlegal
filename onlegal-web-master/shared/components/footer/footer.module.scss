@@ -1,0 +1,85 @@
+@import "../../colors.scss";
+
+.container {
+  background-color: $blue;
+  font-family: "Inter", "sans-serif";
+  padding: 3rem 10% 1rem 10%;
+}
+
+.upperSection {
+  border-bottom: 1px solid $lightGrey;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+
+  ::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  .logo {
+    float: left;
+    padding: 0.5rem 5.5rem 0.5rem 0;
+    width: 20%;
+    img {
+      max-width: 100%;
+    }
+  }
+  .links {
+    color: white;
+    float: left;
+    padding: 0.5rem 1rem;
+
+    .link {
+      display: block;
+      line-height: 2rem;
+    }
+  }
+  .social {
+    color: $blue;
+    padding: 0.5rem 0;
+    text-align: right;
+
+    .link {
+      background-color: white;
+      border-radius: 100%;
+      display: inline-block;
+      font-weight: bold;
+      height: 2rem;
+      line-height: 2rem;
+      margin-left: 0.5rem;
+      text-align: center;
+      width: 2rem;
+    }
+  }
+}
+
+.copyright {
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .upperSection {
+    .logo {
+      float: none;
+      margin: auto;
+      width: 40%;
+      padding: 0.5rem;
+    }
+    .links {
+      float: none;
+      text-align: center;
+
+      .link {
+        line-height: 3rem;
+      }
+    }
+    .social {
+      text-align: center;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../../shared/colors";
+
+.wrapper {
+  background-color: $blue;
+  box-sizing: border-box;
+  min-height: calc(100% - 71px);
+  padding: 5rem 2rem 2rem 2rem;
+  text-align: center;
+
+  .container {
+    max-width: 350px;
+    margin: auto;
+  }
+}

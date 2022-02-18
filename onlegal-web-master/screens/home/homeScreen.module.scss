@@ -1,0 +1,191 @@
+@import "../../shared/colors.scss";
+
+.mainContent {
+  background-color: $lightGrey;
+  padding: 3rem 10%;
+  .hero {
+    display: flex;
+    .left {
+      flex: 1;
+      .title {
+        font-family: "Manrope", sans-serif;
+        padding: 1rem 0;
+      }
+    }
+    .illustration {
+      box-sizing: border-box;
+      flex: 1;
+      padding-left: 4rem;
+    }
+
+    @media screen and (max-width: 959px) {
+      display: block;
+      text-align: center;
+
+      .illustration {
+        max-width: 500px;
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  .howitworks {
+    text-align: center;
+
+    .title {
+      font-family: "Manrope", sans-serif;
+      margin: 6rem 0 3rem 0;
+    }
+
+    .steps {
+      margin-bottom: 2rem;
+
+      .step {
+        display: inline-block;
+        padding: 1rem 2rem;
+
+        .subtitle {
+          color: $darkGrey;
+        }
+
+        svg {
+          width: 40px;
+        }
+      }
+    }
+  }
+
+  .documents {
+    text-align: center;
+
+    .title {
+      font-family: "Manrope", sans-serif;
+      margin: 4rem 0 1rem 0;
+    }
+
+    .container {
+      margin-top: 1rem;
+
+      .document {
+        background-color: #fff;
+        box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        display: inline-flex;
+        margin: 1rem;
+        min-height: 100px;
+        padding: 1.5rem;
+        text-align: left;
+        transition: box-shadow 100ms;
+        vertical-align: middle;
+
+        &:hover {
+          box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.15);
+          text-decoration: none;
+        }
+
+        svg {
+          margin-right: 1rem;
+          width: 50px;
+        }
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 170px;
+
+          .category {
+            color: $grey;
+          }
+        }
+      }
+    }
+  }
+
+  .whyonlegal {
+    margin-top: 4rem;
+    text-align: center;
+
+    .maintitle {
+      font-family: "Manrope", sans-serif;
+    }
+
+    .text {
+      margin: 1.5rem auto;
+      max-width: 700px;
+    }
+
+    .reasons {
+      margin: 0 0 2rem 0;
+
+      .reason {
+        display: inline-block;
+        padding: 1rem 2rem;
+        width: 150px;
+
+        .title {
+          color: $lightBlue;
+        }
+
+        .subtitle {
+          color: $darkGrey;
+        }
+
+        svg {
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+
+.opinions {
+  display: flex;
+  margin-top: 2rem;
+
+  .opinion {
+    box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 2rem;
+    padding: 2rem;
+    vertical-align: middle;
+    max-width: 300px;
+
+    svg {
+      fill: $grey;
+      margin-bottom: 0.5rem;
+    }
+
+    .text {
+      color: $grey;
+      margin: 1rem 0;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    display: block;
+
+    .opinion {
+      margin: 2rem auto;
+    }
+  }
+}
+
+.counters {
+  display: flex;
+  justify-content: center;
+
+  .counter {
+    padding: 2rem;
+    text-align: center;
+
+    .number {
+      font-family: "Manrope", sans-serif;
+      font-weight: bold;
+    }
+
+    .text {
+      color: $grey;
+    }
+  }
+}

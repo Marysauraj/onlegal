@@ -1,0 +1,34 @@
+@import "../../../../../shared/colors.scss";
+
+.wrapper {
+  svg {
+    max-width: 200px;
+  }
+
+  .title {
+    color: #ffffff;
+    margin: 2rem 0 1rem 0;
+  }
+  .subtitle {
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+  .text {
+    color: #ffffff;
+    b {
+      font-weight: bold;
+    }
+  }
+
+  .button {
+    background-color: #ffffff;
+    color: $blue;
+    display: block;
+    font-family: "Inter", "sans-serif";
+    font-weight: bold;
+    margin: 2rem auto 0 auto;
+    padding: 1rem 0;
+    text-decoration: none;
+    width: 100px;
+  }
+}

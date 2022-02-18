@@ -1,0 +1,14 @@
+@import "../../../../../shared/colors";
+
+.container {
+  margin-top: 40px;
+
+  .title {
+    color: $darkBlue;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    color: $grey;
+  }
+}

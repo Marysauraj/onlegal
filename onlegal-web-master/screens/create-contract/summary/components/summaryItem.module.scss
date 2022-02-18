@@ -1,0 +1,35 @@
+@import "../../../../shared/colors";
+
+.container {
+  border: 1px solid $base;
+  border-radius: 4px;
+  padding: 32px 40px;
+  position: relative;
+
+  .title {
+    color: $blue;
+    padding-bottom: 16px;
+    padding-right: 100px;
+  }
+
+  .edit {
+    position: absolute;
+    right: 40px;
+    top: 32px;
+    svg {
+      fill: $grey;
+    }
+  }
+
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 400px) {
+    .title {
+      padding: 0;
+    }
+
+    .edit {
+      position: initial;
+    }
+  }
+}

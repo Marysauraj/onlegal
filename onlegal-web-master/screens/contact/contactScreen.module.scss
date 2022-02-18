@@ -1,0 +1,64 @@
+@import "../../shared/colors.scss";
+
+.hero {
+  background-color: $lightGrey;
+  padding: 3rem 10%;
+  text-align: center;
+
+  .title {
+    font-family: "Manrope", sans-serif;
+  }
+}
+
+.content {
+  padding: 0 10%;
+
+  .links {
+    border-bottom: 1px solid $lightGrey;
+    padding: 2rem 0;
+    text-align: center;
+
+    .link {
+      padding: 0 2rem;
+
+      .text {
+        font-family: "Manrope", sans-serif;
+        font-weight: bold;
+        vertical-align: middle;
+      }
+
+      svg {
+        fill: $grey;
+        margin-right: 0.5rem;
+        vertical-align: middle;
+      }
+
+      @media screen and (max-width: 850px) {
+        display: block;
+        padding: 0.5rem 0;
+      }
+    }
+  }
+
+  .formContainer {
+    margin: 3rem auto;
+    max-width: 400px;
+
+    .title {
+      font-family: "Manrope", sans-serif;
+      text-align: center;
+    }
+
+    .inputGroup {
+      margin: 2rem 0;
+
+      input[name="phone"] {
+        width: 100%;
+      }
+    }
+
+    .formError {
+      margin-bottom: 2rem;
+    }
+  }
+}

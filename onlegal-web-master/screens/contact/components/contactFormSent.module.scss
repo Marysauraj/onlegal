@@ -1,0 +1,22 @@
+@import "../../../shared/colors.scss";
+
+.container {
+  margin: 2rem auto;
+  max-width: 400px;
+  text-align: center;
+
+  svg {
+    max-width: 300px;
+  }
+
+  .title {
+    font-family: "Manrope", sans-serif;
+    margin-top: 2rem;
+  }
+
+  .subtitle {
+    color: $grey;
+    font-family: "Manrope", sans-serif;
+    margin-top: 1rem;
+  }
+}

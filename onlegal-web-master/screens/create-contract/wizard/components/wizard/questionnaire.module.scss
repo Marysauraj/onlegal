@@ -1,0 +1,15 @@
+@import "../../../../../shared/colors";
+
+.container {
+  padding-top: 40px;
+
+  .item {
+    margin-bottom: 40px;
+  }
+
+  .text {
+    color: $darkBlue;
+    line-height: 1.125rem;
+    padding-bottom: 15px;
+  }
+}

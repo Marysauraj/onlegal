@@ -1,0 +1,34 @@
+@import "../../../../../shared/colors";
+
+.container {
+  .title {
+    color: $blue;
+    padding-top: 80px;
+
+    .icon {
+      fill: $grey;
+      vertical-align: middle;
+    }
+
+    .closeIcon {
+      cursor: pointer;
+      fill: $blue;
+      float: right;
+      vertical-align: middle;
+    }
+
+    .text {
+      font-size: 1.125rem;
+      padding-left: 10px;
+      vertical-align: middle;
+    }
+  }
+
+  @media screen and (max-width: 959px) {
+    padding-bottom: 24px;
+
+    .title {
+      padding-top: 0;
+    }
+  }
+}

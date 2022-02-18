@@ -1,0 +1,15 @@
+@import "../../../../../shared/colors";
+
+.button {
+  position: fixed;
+  bottom: 100px;
+}
+
+.informationButton {
+  svg {
+    color: $blue;
+  }
+  @media screen and (min-width: 960px) {
+    display: none !important;
+  }
+}

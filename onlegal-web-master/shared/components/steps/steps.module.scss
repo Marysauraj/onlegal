@@ -1,0 +1,83 @@
+@import "../../colors";
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > h2 {
+  margin: 0 auto;
+}
+
+.title {
+  color: $grey;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 50%;
+  margin: 20px 0 0 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 40px 20px 20px;
+}
+
+.item {
+  display: flex;
+  min-height: 40px;
+}
+
+.item svg {
+  display: none;
+}
+
+.active h3 {
+  color: $darkBlue;
+}
+
+.inactive {
+  color: $grey60;
+}
+
+.completed {
+  color: $blue;
+  justify-content: space-between;
+}
+
+.completed svg {
+  display: block;
+}
+
+.button {
+  width: 150px;
+  align-self: center;
+}
+
+.border {
+  border: 1px solid $base;
+  margin: 0 20px;
+}
+
+.exit {
+  margin: 10px 0 0 20px;
+  cursor: pointer;
+
+  .icon {
+    fill: $grey;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+  .text {
+    color: $blue;
+    vertical-align: middle;
+    font-weight: 600;
+  }
+}

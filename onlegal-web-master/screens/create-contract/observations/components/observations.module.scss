@@ -1,0 +1,50 @@
+@import "../../../../shared/colors";
+
+.container {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 150px 15% 0 15%;
+  position: relative;
+
+  @media screen and (max-width: 959px) {
+    border-top: 2px solid $lightGrey;
+    height: calc(100% - 48px);
+    padding: 20px;
+  }
+
+  @media screen and (max-height: 500px) {
+    padding-top: 20px;
+  }
+}
+
+.errorWrapper {
+  margin-bottom: 1rem;
+}
+
+.formWrapper {
+  overflow: auto;
+  height: calc(100% - 80px);
+
+  .header {
+    margin-bottom: 16px;
+    color: $blue;
+  }
+}
+
+.navigation {
+  background: white;
+  bottom: 0;
+  box-sizing: border-box;
+  left: 0;
+  padding: 16px;
+  position: absolute;
+  width: 100%;
+
+  @media screen and (max-width: 959px) {
+    box-shadow: 0px -2px 7px rgba(0, 0, 0, 0.1);
+  }
+
+  .continueButton {
+    float: right;
+  }
+}

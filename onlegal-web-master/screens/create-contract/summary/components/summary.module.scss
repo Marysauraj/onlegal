@@ -1,0 +1,30 @@
+@import "../../../../shared/colors";
+
+.container {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 32px;
+
+  .priceContainer {
+    display: none;
+  }
+
+  @media screen and (max-width: 959px) {
+    border-top: 2px solid $lightGrey;
+    height: calc(100% - 48px);
+
+    .priceContainer {
+      display: block;
+    }
+  }
+}
+
+.header {
+  margin-bottom: 16px;
+  text-align: center;
+
+  .subtitle {
+    color: $grey;
+  }
+}

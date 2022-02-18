@@ -1,0 +1,38 @@
+@import "../../shared/colors.scss";
+
+.wrapper {
+  background-color: $lightGrey;
+  padding: 3rem 10%;
+
+  .title {
+    font-family: "Manrope", sans-serif;
+    padding: 1rem 0;
+  }
+
+  .content {
+    line-height: 1.5rem;
+
+    b {
+      font-weight: bold;
+    }
+
+    ol {
+      counter-reset: item;
+      padding: 0 0 0.5rem 0.5rem;
+    }
+    li {
+      display: block;
+      padding-bottom: 0.5rem;
+    }
+    li:before {
+      content: counters(item, ".") ". ";
+      counter-increment: item;
+    }
+
+    br {
+      content: " ";
+      display: block;
+      margin: 1rem 0;
+    }
+  }
+}

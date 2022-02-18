@@ -1,0 +1,200 @@
+@import "../../../shared/colors";
+
+.hero {
+  margin: 3rem 5% 1.5rem;
+  text-align: center;
+
+  .title {
+    font-family: "Manrope", sans-serif;
+  }
+
+  .subtitle {
+    color: $blue;
+    padding: 1rem 0 1.5rem;
+  }
+
+  .howItWorks {
+    cursor: pointer;
+    svg {
+      padding-right: 0.5rem;
+      vertical-align: middle;
+    }
+  }
+}
+
+.videoWrapper {
+  height: 0;
+  min-width: 500px;
+  padding-bottom: 56.25%; /* 16:9 */
+  position: relative;
+
+  @media screen and (max-width: 600px) {
+    min-width: 300px;
+  }
+
+  @media screen and (max-width: 400px) {
+    min-width: auto;
+  }
+
+  iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.content {
+  padding: 0 5%;
+  margin: 3rem 0;
+
+  .categorySelector {
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    width: 20%;
+
+    .mobileSelector {
+      display: none;
+    }
+
+    .title {
+      font-family: "Manrope", sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .category {
+      cursor: pointer;
+      padding-bottom: 1rem;
+      text-transform: capitalize;
+
+      &.active {
+        font-weight: bold;
+      }
+
+      &.nonActive {
+        color: $darkGrey;
+      }
+    }
+  }
+
+  .contractList {
+    box-sizing: border-box;
+    float: left;
+    padding: 0 1rem;
+    width: 80%;
+
+    .title {
+      font-family: "Manrope", sans-serif;
+      text-transform: capitalize;
+    }
+
+    .contracts {
+      margin-top: 1rem;
+
+      .contractItem {
+        border-bottom: 1px solid $lightGrey;
+        padding: 2rem 0;
+
+        .contractTitle {
+          font-weight: 500;
+          text-transform: capitalize;
+        }
+
+        .contractDescription {
+          box-sizing: border-box;
+          color: $darkGrey;
+          display: inline-block;
+          padding-right: 1rem;
+          vertical-align: middle;
+          width: 70%;
+        }
+
+        .contractButtonContainer {
+          display: inline-block;
+          text-align: center;
+          vertical-align: middle;
+          width: 30%;
+        }
+
+        .contractButton {
+          border-radius: 0;
+        }
+      }
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+  }
+
+  &::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+
+  @media screen and (max-width: 959px) {
+    .categorySelector {
+      width: 30%;
+    }
+
+    .contractList {
+      width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .categorySelector {
+      float: none;
+      margin-bottom: 1rem;
+      width: 100%;
+
+      .desktopSelector {
+        display: none;
+      }
+
+      .mobileSelector {
+        display: block;
+
+        .formControl {
+          width: 100%;
+        }
+      }
+    }
+
+    .contractList {
+      float: none;
+      width: 100%;
+
+      .title {
+        display: none;
+      }
+
+      .contracts {
+        .contractItem {
+          padding: 1rem 0;
+
+          &:first-child {
+            padding-top: 0;
+          }
+
+          .contractDescription {
+            width: 100%;
+          }
+
+          .contractButtonContainer {
+            display: block;
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

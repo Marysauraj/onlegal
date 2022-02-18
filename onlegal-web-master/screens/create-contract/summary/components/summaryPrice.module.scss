@@ -1,0 +1,76 @@
+@import "../../../../shared/colors";
+
+.container {
+  padding: 16px;
+
+  .title {
+    color: $grey;
+  }
+
+  .priceContainer {
+    background: white;
+    margin: 32px 0 24px 0;
+    padding: 16px;
+    .title {
+      border-bottom: 1px solid $base;
+      color: $blue;
+      font-size: 1.125rem;
+      padding-bottom: 8px;
+    }
+    .detail {
+      padding-top: 8px;
+      &::after {
+        clear: both;
+        content: "";
+        display: block;
+      }
+      .text {
+        display: inline-block;
+        line-height: 1.75rem;
+        max-width: 60%;
+        padding-right: 1rem;
+        vertical-align: top;
+      }
+      .price {
+        color: $blue;
+        display: inline-block;
+        font-size: 1.125rem;
+        font-weight: bold;
+        vertical-align: top;
+      }
+    }
+  }
+
+  .mercadopagoLogo {
+    margin: 24px auto;
+    width: fit-content;
+  }
+
+  @media screen and (max-width: 959px) {
+    & {
+      padding: 0;
+    }
+    .priceContainer {
+      margin: 0;
+      padding: 16px 0;
+    }
+  }
+
+  .button {
+    text-transform: none;
+    width: 100%;
+  }
+
+  .mercadopagoForm {
+    & button {
+      background-color: $blue;
+      border-radius: 0;
+      width: 100%;
+    }
+  }
+
+  .mercadopagoLogo {
+    display: block;
+    margin: 24px auto;
+  }
+}

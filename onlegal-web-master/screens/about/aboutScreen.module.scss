@@ -1,0 +1,82 @@
+@import "../../shared/colors.scss";
+
+.hero {
+  background-color: $lightGrey;
+  display: flex;
+  padding: 3rem 10%;
+
+  .text {
+    flex: 1;
+
+    .title {
+      font-family: "Manrope", sans-serif;
+      padding: 1rem 0;
+    }
+
+    .content {
+      line-height: 1.5rem;
+    }
+  }
+  .illustration {
+    flex: 1;
+  }
+
+  @media screen and (max-width: 959px) {
+    flex-direction: column-reverse;
+
+    .illustration {
+      text-align: center;
+      svg {
+        max-height: 200px;
+      }
+    }
+  }
+}
+
+.quote {
+  padding: 3rem 10%;
+
+  .text {
+    font-family: "Manrope", sans-serif;
+  }
+}
+
+.values {
+  background-color: $lightGrey;
+  display: flex;
+  padding: 3rem 10%;
+
+  .value {
+    padding: 0 2rem;
+
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+
+    .text {
+      color: $grey;
+    }
+  }
+
+  @media screen and (max-width: 959px) {
+    flex-direction: column;
+
+    .value {
+      padding: 1rem 0;
+
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      .text {
+        color: $grey;
+      }
+    }
+  }
+}

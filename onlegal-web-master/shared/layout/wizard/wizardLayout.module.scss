@@ -1,0 +1,46 @@
+@import "../../../shared/colors";
+
+@mixin section {
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.section {
+  @include section;
+
+  background: $white;
+  width: 50%;
+
+  @media screen and (max-width: 959px) {
+    width: 100%;
+  }
+}
+
+@mixin aside {
+  @include section;
+
+  background: $lightGrey;
+  width: 20%;
+  min-width: 180px;
+  overflow-y: auto;
+  padding: 16px;
+
+  @media screen and (max-width: 959px) {
+    display: none;
+  }
+}
+
+.left {
+  @include aside;
+}
+
+.right {
+  @include aside;
+  width: 30%;
+}
